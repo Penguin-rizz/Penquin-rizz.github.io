@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html> 
+<! an angle bracket with an exclamation mark allows you to put in comments, meaning the computer doesnt read this line>
+<! comments are used to allow you to go describe parts of the code that may be complex or unclear>
+
+<head>   <! the head section provides details about the WHOLE page>
+<title>OSCAR'S WEBSITE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<! the style section within the head controls what the items on the page look like. Dont put comments in here because things will break.>
+<style>  
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	border: none;
+	width: 100%;
+	justify-content: space-evenly
+}
+
+.container-header {
+	background-color:lime;
+	justify-content:flex-end;
+}
+	
+.bgbanner {
+    position: relative;
+    top: 0;
+    left: 0;
+	object-fit:cover;}	
+
+.profilepic { 
+	position: absolute;
+    top: 25px;
+    left: 30px;
+	border-radius: 50%;
+	border: 10px solid;
+	border-color: white;}
+	
+	
+body {background-color: White;}
+
+h1   {color: cyan;}
+
+p    {color: white; font-weight:bold;}
+	
+table {
+  border-style: solid;
+  border-color: white;}
+
+button {
+    height:40px;
+    width:200px;
+    border-radius:50px;
+    outline:none;
+    border:none;
+    background-color:#12E1BB;
+    cursor:pointer;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:3px;
+    font-family:Days One;
+	color:#104576;
+}
+
+.button:hover {
+	background-color: #15DCEB;
+}
+
+@media (max-width: 700px) {
+    .profilepic {
+		display:none;
+	}
+	.container-header {
+		justify-content: center;
+	}
+}
+
+</style>  <! the slash / before the word style means it is the end of that attribute>
+</head>  <! the / before the head means the section is finished>
+
+<div class="container">
+<body>  <! the body section is the actual items you will have on the page>
+
+<div class="container"> <! the table attribute creates a table.>
+	<img class="bgbanner" align="center" src="images/banner.png"  alt="This is a bg photo" style="width:100%;height:150px"> <! td means table data, it creates a new column>
+	<div> <img class="profilepic" align="right" src="images/Profile.jpg"  alt="This is a photo of me" height="170" width="200"></div>
+</div>
+
+<div class="container container-header"> <!-- This is the blue table -->
+<div height="120px" style="padding-right: 200px"> <h1 style="color:black"> Oscar NUSKE </div>
+</div>
+
+<div class="container" style="background-color:#80d029; margin-top: 10px">              
+	<div style= "margin:2px"> <a href="Profile Page.html"> <button class="button">Profile Page</button> </a></div>
+	<div style= "margin:2px"> <a href="file:///C:/Users/240299/OneDrive%20-%20Henley%20High%20School/Desktop/Oscar/Year%207/Semester%202/Term%203/Digital%20Tech/Assignment/Web_Page_Creation/Web%20Page%20Creation/Gallery.html"> <button class="button">Gallery</button> </a></div>
+	<div style= "margin:2px"> <a href="file:///C:/Users/240299/OneDrive%20-%20Henley%20High%20School/Desktop/Oscar/Year%207/Semester%202/Term%203/Digital%20Tech/Assignment/Web_Page_Creation/Web%20Page%20Creation/Spotify.html"> <button class="button">My Spotify</button> </a></div>
+	<div style= "margin:2px"> <a href="https://scratch.mit.edu/studios/31731048"> <button class="button">Scratch</button> </a></div>
+	<div style= "margin:2px"> <a href="file:///C:/Users/240299/OneDrive%20-%20Henley%20High%20School/Desktop/Oscar/Year%207/Semester%202/Term%203/Digital%20Tech/Assignment/Web_Page_Creation/Web%20Page%20Creation/Games%20Page.html"> <button class="button">Games</button> </a></div>
+</div>
+
+<div class="container" style= "background-color:cyan; margin-top: 10px" >
+	<div width="33%"> <a href="file:///C:/Users/240299/OneDrive%20-%20Henley%20High%20School/Desktop/Oscar/Year%207/Semester%202/Term%203/Digital%20Tech/Assignment/Web_Page_Creation/Web%20Page%20Creation/Games%20Page%201.html"> <button class="button">Pal World</button> </a></div>
+	<div width="33%"> <a href="file:///C:/Users/240299/OneDrive%20-%20Henley%20High%20School/Desktop/Oscar/Year%207/Semester%202/Term%203/Digital%20Tech/Assignment/Web_Page_Creation/Web%20Page%20Creation/Game%20Page%202.html"> <button class="button">Minecraft</button> </a></div>
+	<div width="33%"> <a href="file:///C:/Users/240299/OneDrive%20-%20Henley%20High%20School/Desktop/Oscar/Year%207/Semester%202/Term%203/Digital%20Tech/Assignment/Web_Page_Creation/Web%20Page%20Creation/Game%20Page%203.html"> <button class="button">Pokemon</button> </a></div>
+</div>
+
+<br>
+
+<div class="container" style="background-color:#51b1d2; margin-top: 10px "> <!--This is the bottom purple table-->
+	<div>Thanks to</a> </div>
+	<div><a>Director: Oscar Nuske</a></div>
+	<div><a>Designer: Oscar Nuske</a></div>
+	<div><a>Coder: Oscar Nuske</a></div>
+	<div><a>Person the website is about: Oscar Nuske</a></div>
+	<div><a>The Goose Guy: Chris Scoffield</a></div>
+<div>
+
+</div>
+</body>
+</html>
